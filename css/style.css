@@ -1,0 +1,25 @@
+:root {
+    --dc-bg-nav: #0c243a;
+}
+
+header {
+    height: 70px;
+}
+
+.wrapper {
+    margin-top: 70px;
+}
+
+#sidebar {
+    height: calc(100vh - 70px);
+    width: 150px;
+    flex-shrink: 0;
+    background-color: var(--dc-bg-nav);
+    background-image: url("../img/sidebar-bg.png");
+}
+
+main {
+    flex-grow: 1;
+    overflow-y: auto;
+    height: calc(100vh - 70px);
+}
