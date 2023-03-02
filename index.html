@@ -12,20 +12,35 @@
 <body class="bg-body-tertiary">
     <!-- HEADER -->
     <header class="fixed-top d-flex align-items-center">
-        <nav class="bg-white">
-            header nav
+        <nav class="bg-white h-100 nav">
+            <a class="d-block h-100 d-flex align-items-center" href="#">
+                <img class="d-none d-md-block img-fluid" src="./img/logo.svg" alt="Logo">
+                <img class="d-block d-md-none h-100" src="./img/mobile-logo.png" alt="Logo">
+            </a> 
+            <!-- <a class="d-block h-100" href="#">
+                <img class="d-block d-md-none img-fluid h-100" src="./img/mobile-logo.png" alt="Logo">
+            </a>  -->
         </nav>
     </header>
     <!-- WRAPPER -->
     <div class="wrapper d-flex">
         <!-- SIDEBAR -->
-        <nav class="text-whiteN flex-shrink-0" id="sidebar">
-            Prova
+        <nav class="text-white flex-shrink-0 py-4 px-2 nav flex-column align-items-center justify-content-between" id="sidebar">
+            <div class="w-100">
+                <a class="btn text-white w-100 text-md-start" href="#"><i class="px-md-0 px-sm-1 fa-solid fa-house me-3"></i><span class="d-none d-md-inline-block">Home</span></a>
+                <a class="btn text-white w-100 text-center text-md-start" href="#"><i class="px-md-0 px-sm-1 fa-solid fa-chart-simple me-3"></i><span class="d-none d-md-inline-block">Stats</span>
+                <a class="btn text-white w-100 text-center text-md-start" href="#"><i class="px-md-0 px-sm-1 fa-solid fa-signal me-3"></i><span class="d-none d-md-inline-block">Signals</span></a>
+            </div>
+            <div class="w-100">
+                <a class="btn text-white w-100 text-center text-md-start" href="#"><i class="px-md-0 px-sm-1 fa-solid fa-gear me-3"></i><span class="d-none d-md-inline-block">Signals</span></a>
+            </div>
         </nav>
         <!-- MAIN -->
         <main class="flex-grow-1 overflow-y-auto">
-            <div class="bg-primary text-white container-fluid p-5 mb-4">
-                aside
+            <!-- ASIDE -->
+            <div class="bg-primary text-white container-fluid p-3 mb-4">
+                <h1>Boolean</h1>
+                <span class="badge bg-primary filter"> Piano blaze</span>
             </div>
             <div class="container-fluid">
                 <div class="row">
@@ -38,7 +53,7 @@
                             </div>
                             <div class="card-body table-responsive-md">
                                 <!-- TABLE -->
-                                <table class="table table-hover">
+                                <table class="table table-hover small">
                                     <thead>
                                       <tr class="text-center text-nowrap">
                                         <th class="fw-normal text-start" scope="colgroup">Nome</th>
@@ -52,7 +67,7 @@
                                         <!-- ROW 1 -->
                                       <tr>
                                         <th class="fw-medium text-start" scope="row">
-                                            <img class="me-2" src="./img/class-avatar.jpg" alt="Avatar">Classe 75
+                                            <img class="me-2 rounded-circle" src="./img/class-avatar.jpg" alt="Avatar">Classe 75
                                         </th>
                                         <td class="d-none d-sm-table-cell">15 Feb 2021</td>
                                         <td class="d-none d-sm-table-cell">20%</td>
@@ -65,7 +80,7 @@
                                         <!-- ROW 2 -->
                                       <tr>
                                         <th class="fw-medium text-start" scope="row">
-                                            <img class="me-2" src="./img/class-avatar.jpg" alt="Avatar">Classe 76
+                                            <img class="me-2 rounded-circle" src="./img/class-avatar.jpg" alt="Avatar">Classe 76
                                         </th>
                                         <td class="d-none d-sm-table-cell">16 Feb 2021</td>
                                         <td class="d-none d-sm-table-cell">20%</td>
@@ -78,7 +93,7 @@
                                         <!-- ROW 3 -->
                                       <tr>
                                         <th class="fw-medium text-start" scope="row">
-                                            <img class="me-2" src="./img/class-avatar.jpg" alt="Avatar">Classe 77
+                                            <img class="me-2 rounded-circle" src="./img/class-avatar.jpg" alt="Avatar">Classe 77
                                         </th>
                                         <td class="d-none d-sm-table-cell">17 Feb 2021</td>
                                         <td class="d-none d-sm-table-cell">20%</td>
@@ -91,7 +106,7 @@
                                         <!-- ROW 4 -->
                                       <tr>
                                         <th class="fw-medium text-start" scope="row">
-                                            <img class="me-2" src="./img/class-avatar.jpg" alt="Avatar">Classe 78
+                                            <img class="me-2 rounded-circle" src="./img/class-avatar.jpg" alt="Avatar">Classe 78
                                         </th>
                                         <td class="d-none d-sm-table-cell">18 Feb 2021</td>
                                         <td class="d-none d-sm-table-cell">20%</td>
@@ -104,7 +119,7 @@
                                         <!-- ROW 5 -->
                                       <tr>
                                         <th class="fw-medium text-start" scope="row">
-                                            <img class="me-2" src="./img/class-avatar.jpg" alt="Avatar">Classe 79
+                                            <img class="me-2 rounded-circle" src="./img/class-avatar.jpg" alt="Avatar">Classe 79
                                         </th>
                                         <td class="d-none d-sm-table-cell">19 Feb 2021</td>
                                         <td class="d-none d-sm-table-cell">20%</td>
@@ -117,7 +132,7 @@
                                         <!-- ROW 6 -->
                                       <tr>
                                         <th class="fw-medium text-start" scope="row">
-                                            <img class="me-2" src="./img/class-avatar.jpg" alt="Avatar">Classe 80
+                                            <img class="me-2 rounded-circle" src="./img/class-avatar.jpg" alt="Avatar">Classe 80
                                         </th>
                                         <td class="d-none d-sm-table-cell">20 Feb 2021</td>
                                         <td class="d-none d-sm-table-cell">20%</td>
@@ -130,7 +145,7 @@
                                         <!-- ROW 7 -->
                                       <tr>
                                         <th class="fw-medium text-start" scope="row">
-                                            <img class="me-2" src="./img/class-avatar.jpg" alt="Avatar">Classe 81
+                                            <img class="me-2 rounded-circle" src="./img/class-avatar.jpg" alt="Avatar">Classe 81
                                         </th>
                                         <td class="d-none d-sm-table-cell">21 Feb 2021</td>
                                         <td class="d-none d-sm-table-cell">20%</td>
@@ -143,7 +158,7 @@
                                         <!-- ROW 8 -->
                                       <tr>
                                         <th class="fw-medium text-start" scope="row">
-                                            <img class="me-2" src="./img/class-avatar.jpg" alt="Avatar">Classe 82
+                                            <img class="me-2 rounded-circle" src="./img/class-avatar.jpg" alt="Avatar">Classe 82
                                         </th>
                                         <td class="d-none d-sm-table-cell">22 Feb 2021</td>
                                         <td class="d-none d-sm-table-cell">20%</td>
@@ -173,7 +188,7 @@
                                         </button>
                                         </h2>
                                         <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordion-faq">
-                                            <div class="accordion-body">Clicca sul + in alto nella sezione blu.</div>
+                                            <div class="accordion-body fw-medium">Clicca sul + in alto nella sezione blu.</div>
                                         </div>
                                     </div>
                                     <!-- ITEM 2 -->
@@ -184,7 +199,7 @@
                                         </button>
                                         </h2>
                                         <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordion-faq">
-                                            <div class="accordion-body">Clicca sull'icona della campanella.</div>
+                                            <div class="accordion-body fw-medium">Clicca sull'icona della campanella.</div>
                                         </div>
                                     </div>
                                     <!-- ITEM 3 -->
@@ -195,7 +210,7 @@
                                         </button>
                                         </h2>
                                         <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordion-faq">
-                                            <div class="accordion-body">DEVI usarla da mobile; dopo tutte le classi che ci ho messo per farlo responsive</div>
+                                            <div class="accordion-body fw-medium">DEVI usarla da mobile; dopo tutte le classi che ci ho messo per farlo responsive</div>
                                         </div>
                                     </div>
                                 </div>
@@ -211,10 +226,10 @@
                             <div class="card-header h2">
                               Todo
                             </div>
-                            <div class="card-body">
+                            <div class="card-body small">
                                 <!-- CHECKBOX GROUP -->
                                 <div class="card">
-                                    <ul class="list-group list-group-flush fw-medium">
+                                    <ul class="list-group list-group-flush fw-medium small">
                                         <!-- CHECK 1 -->
                                         <li class="list-group-item">
                                             <div class="form-check">
@@ -250,7 +265,7 @@
                         <!-- Graph -->
                         <section class="card mb-4">
                             <div class="card-body">
-                                <ul class="list-group fw-medium">
+                                <ul class="list-group fw-medium small">
                                     <li class="list-group-item pb-3">
                                         <img class="img-fluid mb-5" src="./img/stats.jpeg" alt="Grafico molto vago e poco attendibile">
                                         <h3>Utenti attivi</h3>
@@ -272,4 +287,3 @@
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
 </body>
-</html>
