@@ -11,15 +11,35 @@
 </head>
 <body class="bg-body-tertiary">
     <!-- HEADER -->
-    <header class="fixed-top d-flex align-items-center">
-        <nav class="bg-white h-100 nav">
+    <header class="fixed-top bg-white">
+        <nav class="bg-white h-100 nav align-items-center py-1 px-2">
+            <!-- LOGO -->
             <a class="d-block h-100 d-flex align-items-center" href="#">
                 <img class="d-none d-md-block img-fluid" src="./img/logo.svg" alt="Logo">
                 <img class="d-block d-md-none h-100" src="./img/mobile-logo.png" alt="Logo">
-            </a> 
-            <!-- <a class="d-block h-100" href="#">
-                <img class="d-block d-md-none img-fluid h-100" src="./img/mobile-logo.png" alt="Logo">
-            </a>  -->
+            </a>
+            <!-- SEARCH BAR -->
+            <div class="col bg-secondary bg-opacity-25 rounded-3 ms-4 me-2 p-2">
+                <i class="fa-solid fa-magnifying-glass me-1"></i>
+                <span class="text-body text-opacity-75 small">Prova a cercare: Lezioni di Laravel</span>
+            </div>
+            <!-- ICON MENU -->
+            <div class="text-secondary">
+                <i class="fa-solid fa-list-ul mx-2 d-none d-md-inline-block"></i>
+                <i class="fa-solid fa-circle-question mx-3 d-none d-md-inline-block"></i>
+                <i class="fa-solid fa-ellipsis-vertical mx-3 d-none d-md-inline-block"></i>
+                <!-- DROPDOWN MENU -->
+                <div class="dropdown d-inline-block">
+                    <button class="btn" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="fa-solid fa-bell dc-orange"></i>
+                    </button>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Profilo</a></li>
+                      <li><a class="dropdown-item" href="#">Fatturazione</a></li>
+                      <li><a class="dropdown-item" href="#">Logout</a></li>
+                    </ul>
+                  </div>
+            </div>
         </nav>
     </header>
     <!-- WRAPPER -->
@@ -38,10 +58,35 @@
         <!-- MAIN -->
         <main class="flex-grow-1 overflow-y-auto">
             <!-- ASIDE -->
-            <div class="bg-primary text-white container-fluid p-3 mb-4">
-                <h1>Boolean</h1>
-                <span class="badge bg-primary filter"> Piano blaze</span>
+            <div class="bg-primary text-white container-fluid p-3 mb-4 d-flex flex-column flex-sm-row justify-content-between">
+                <!-- ADD SECTION -->
+                <div class="px-2 order-sm-2 mb-3">Nuovo Studente
+                    <button class="btn btn-outline-light ms-3" type="button" data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+                        <i class="fa-solid fa-plus"></i>
+                    </button>
+                </div>
+                <!-- BADGE SECTION -->
+                <div class="px-2 order-sm-0 mb-3">
+                    <h1 class="d-inline-block">Boolean</h1>
+                    <span class="badge bg-black bg-opacity-25 rounded-pill mb-1"> Piano blaze</span>
+                    <div>
+                        <span class="badge bg-black bg-opacity-25 rounded-pill">3 app</span>
+                        <i class="fa-solid fa-angles-right"></i>
+                        <span class="badge bg-black bg-opacity-25 rounded-pill d-md-none d-inline-block"><i class="fa-solid fa-plus"></i></span>
+                        <span class="badge bg-black bg-opacity-25 rounded-pill d-none d-md-inline-block">Boolean mobile app</span>
+                        <span class="badge bg-black bg-opacity-25 rounded-pill d-none d-md-inline-block">Boolean web app</span>
+                        <span class="badge bg-black bg-opacity-25 rounded-pill d-none d-md-inline-block">Boolean blog app</span>
+                    </div>
+                </div>
+                <!-- ONLINE NOW -->
+                <div class="px-2 order-sm-1">
+                    Studenti online negli ultimi 30 minuti
+                    <div class="h1"> 125</div>
+                </div>
+
             </div>
+            <!-- SECTION -->
             <div class="container-fluid">
                 <div class="row">
                 <!-- COL LEFT  -->
@@ -123,7 +168,7 @@
                                         </th>
                                         <td class="d-none d-sm-table-cell">19 Feb 2021</td>
                                         <td class="d-none d-sm-table-cell">20%</td>
-                                        <td><span class="badge bg-warning">Failed</span></td>
+                                        <td><span class="badge bg-danger">Failed</span></td>
                                         <td class="text-nowrap">
                                             <button class="btn btn-outline-secondary border-2"><i class="fa-solid fa-pencil"></i></button>
                                             <button class="btn btn-outline-secondary border-2"><i class="fa-solid fa-trash"></i></button>
@@ -149,7 +194,7 @@
                                         </th>
                                         <td class="d-none d-sm-table-cell">21 Feb 2021</td>
                                         <td class="d-none d-sm-table-cell">20%</td>
-                                        <td><span class="badge bg-warning">Failed</span></td>
+                                        <td><span class="badge bg-danger">Failed</span></td>
                                         <td class="text-nowrap">
                                             <button class="btn btn-outline-secondary border-2"><i class="fa-solid fa-pencil"></i></button>
                                             <button class="btn btn-outline-secondary border-2"><i class="fa-solid fa-trash"></i></button>

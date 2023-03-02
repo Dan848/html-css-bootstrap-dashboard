@@ -2,10 +2,16 @@
 :root {
     --dc-bg-nav: #0c243a;
 }
+
+.dc-orange {
+    color: #fe8e00;
+}
+
 /* HEADER */
 header {
     height: 70px;
 }
+
 /* Wrapper */
 .wrapper {
     margin-top: 70px;
