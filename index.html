@@ -47,24 +47,141 @@
         <!-- SIDEBAR -->
         <nav class="text-white flex-shrink-0 py-4 px-2 nav flex-column align-items-center justify-content-between" id="sidebar">
             <div class="w-100">
-                <a class="btn text-white w-100 text-md-start" href="#"><i class="px-md-0 px-sm-1 fa-solid fa-house me-3"></i><span class="d-none d-md-inline-block">Home</span></a>
-                <a class="btn text-white w-100 text-center text-md-start" href="#"><i class="px-md-0 px-sm-1 fa-solid fa-chart-simple me-3"></i><span class="d-none d-md-inline-block">Stats</span>
-                <a class="btn text-white w-100 text-center text-md-start" href="#"><i class="px-md-0 px-sm-1 fa-solid fa-signal me-3"></i><span class="d-none d-md-inline-block">Signals</span></a>
+                <a class="btn text-white w-100 text-md-start" href="#"><i class="px-md-0 px-1 fa-solid fa-house me-3"></i><span class="d-none d-md-inline-block">Home</span></a>
+                <a class="btn text-white w-100 text-center text-md-start" href="#"><i class="px-md-0 px-1 fa-solid fa-chart-simple me-3"></i><span class="d-none d-md-inline-block">Stats</span>
+                <a class="btn text-white w-100 text-center text-md-start" href="#"><i class="px-md-0 px-1 fa-solid fa-signal me-3"></i><span class="d-none d-md-inline-block">Signals</span></a>
             </div>
             <div class="w-100">
-                <a class="btn text-white w-100 text-center text-md-start" href="#"><i class="px-md-0 px-sm-1 fa-solid fa-gear me-3"></i><span class="d-none d-md-inline-block">Signals</span></a>
+                <a class="btn text-white w-100 text-center text-md-start" href="#"><i class="px-md-0 px-1 fa-solid fa-gear me-3"></i><span class="d-none d-md-inline-block">Signals</span></a>
             </div>
         </nav>
         <!-- MAIN -->
         <main class="flex-grow-1 overflow-y-auto">
             <!-- ASIDE -->
             <div class="bg-primary text-white container-fluid p-3 mb-4 d-flex flex-column flex-sm-row justify-content-between">
-                <!-- ADD SECTION -->
+                <!-- ADD NEW STUDENT -->
                 <div class="px-2 order-sm-2 mb-3">Nuovo Studente
                     <button class="btn btn-outline-light ms-3" type="button" data-bs-toggle="offcanvas"
                         data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
                         <i class="fa-solid fa-plus"></i>
                     </button>
+                    
+                    <div class="offcanvas offcanvas-end w-100" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+                        <div class="offcanvas-header">
+                          <h5 class="offcanvas-title" id="offcanvasRightLabel">Inserisci un nuovo studente</h5>
+                          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body">
+                          
+                            <form class="row g-3 fw-medium">
+
+                                <div class="col-12 col-sm-6">
+                                    <label for="inputName" class="form-label">Nome</label>
+                                    <input type="text" class="form-control" id="inputName" name="inputName">
+                                </div>
+
+                                <div class="col-12 col-sm-6">
+                                    <label for="inputSurname" class="form-label">Cognome</label>
+                                    <input type="text" class="form-control" id="inputSurname" name="inputSurname">
+                                </div>
+
+                                <div class="col-12 col-sm-6">
+                                    <label for="inputEmail" class="form-label">Email</label>
+                                    <div class="input-group">
+                                        <div class="input-group-text">@</div>
+                                        <input type="email" class="form-control" id="inputEmail" name="inputEmail">
+                                    </div>
+                                </div>
+
+                                <div class="col 12 col-sm-6">
+                                  <label for="inputPassword" class="form-label">Password</label>
+                                  <input type="password" class="form-control" id="inputPassword">
+                                </div>
+
+                                <div class="col-12 col-md-6 d-none d-md-block">
+                                    <label for="inputEmailAddress" class="form-label">Indirizzo Email</label>
+                                    <div class="input-group">
+                                        <div class="input-group-text">@</div>
+                                        <input type="email" class="form-control" id="inputEmailAddress" name="inputEmailAddress">
+                                    </div>
+                                </div>
+                                
+                                <div class="col 12 col-md-6 d-none d-md-block">
+                                    <label for="inputSecondPassword" class="form-label">Password</label>
+                                    <input type="password" class="form-control" id="inputSecondPassword" name="inputSecondPassword">
+                                  </div>
+
+                                <div class="col-12">
+                                  <label for="inputAddress" class="form-label">Indirizzo</label>
+                                  <input type="text" class="form-control" id="inputAddress" name="inputAddress" placeholder="Ei tu che stai leggendo, so dove abiti">
+                                </div>
+
+                                <div class="col-12 col-sm-6">
+                                  <label for="inputCity" class="form-label">Città</label>
+                                  <input type="text" class="form-control" id="inputCity" name="inputCity">
+                                </div>
+
+                                <div class="col-12 col-sm-4">
+                                  <label for="inputState" class="form-label">Stato</label>
+                                  <select id="inputState" class="form-select fw-medium" name="inputState">
+                                    <option selected>Aprimi...</option>
+                                    <option>Italia</option>
+                                    <option>Molise</option>
+                                    <option>Repubblica di San Marino</option>
+                                    <option>Pizzo Calabro</option>
+                                    <option>Città del Vaticano</option>
+                                  </select>
+
+                                </div>
+                                <div class="col-12 col-sm-2">
+                                  <label for="inputCap" class="form-label text-uppercase">Cap</label>
+                                  <input type="text" class="form-control" id="inputCap" name="inputCap">
+                                </div>
+
+                                <div class="col-12">
+                                    <label for="inputFile" class="form-label fw-medium">Foto</label>
+                                    <input type="file" class="form-control fw-medium" id="inputFile" name="inputFile" placeholder="Ei tu che stai leggendo, so dove abiti">
+                                  </div>
+
+                                <div class="col-12">
+                                  <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="gridCheck">
+                                    <label class="form-check-label" for="gridCheck">
+                                      Seleziona per proseguire
+                                    </label>
+                                  </div>
+                                </div>
+                                
+                                <!-- Type Button so that the page will NOT be refreshed -->
+                                <div class="col-12">
+                                  <button type="button" class="btn bg-primary fw-medium text-white">Salva</button>
+                                  <button type="button" class="btn bg-warning fw-medium">Svuota</button>
+                                </div>
+                            </form>
+
+
+
+                        </div>
+                      </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
                 </div>
                 <!-- BADGE SECTION -->
                 <div class="px-2 order-sm-0 mb-3">

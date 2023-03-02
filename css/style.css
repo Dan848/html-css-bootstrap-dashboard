@@ -1,8 +1,4 @@
 /* GENERAL */
-:root {
-    --dc-bg-nav: #0c243a;
-}
-
 .dc-orange {
     color: #fe8e00;
 }
@@ -16,11 +12,12 @@ header {
 .wrapper {
     margin-top: 70px;
 }
+
 /* Sidebar */
 #sidebar {
     height: calc(100vh - 70px);
-    width: 150px;
-    background-color: var(--dc-bg-nav);
+    width: 68px;
+    background-color: #0c243a;
     background-image: url("../img/sidebar-bg.png");
 }
 
@@ -38,8 +35,13 @@ th img {
 }
 
 /* MEDIA QUERY */
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 768px) {
     #sidebar {
-        width: 68px;
+        width: 150px;
+    }
+
+    .offcanvas {
+        min-width: 768px !important;
+        width: 40% !important;
     }
 }
