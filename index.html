@@ -10,27 +10,260 @@
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body class="bg-body-tertiary">
+    <!-- HEADER -->
     <header class="fixed-top d-flex align-items-center">
         <nav class="bg-white">
             header nav
         </nav>
     </header>
-
+    <!-- WRAPPER -->
     <div class="wrapper d-flex">
-        <nav class="text-white" id="sidebar">
+        <!-- SIDEBAR -->
+        <nav class="text-whiteN flex-shrink-0" id="sidebar">
             Prova
         </nav>
-        <main>
-            <div class="bg-primary text-white container-fluid p-5">
+        <!-- MAIN -->
+        <main class="flex-grow-1 overflow-y-auto">
+            <div class="bg-primary text-white container-fluid p-5 mb-4">
                 aside
             </div>
             <div class="container-fluid">
                 <div class="row">
-                    <div class="col-12 col-md-8">
-                        col1
+                <!-- COL LEFT  -->
+                    <div class="col-12 col-md-8">                    
+                        <!-- CLASS -->
+                        <section class="card mb-4">
+                            <div class="card-header h2">
+                              Prossime classi
+                            </div>
+                            <div class="card-body table-responsive-md">
+                                <!-- TABLE -->
+                                <table class="table table-hover">
+                                    <thead>
+                                      <tr class="text-center text-nowrap">
+                                        <th class="fw-normal text-start" scope="colgroup">Nome</th>
+                                        <th class="fw-normal col-md-2 d-none d-sm-table-cell" scope="col">Data Inizio</th>
+                                        <th class="fw-normal col-md-1 text-uppercase d-none d-sm-table-cell" scope="col">Roi</th>
+                                        <th class="fw-normal col-md-1" scope="col">Stato</th>
+                                        <th class="fw-normal col-md-2" scope="col">Azioni</th>
+                                      </tr>
+                                    </thead>
+                                    <tbody class="fw-medium text-center">
+                                        <!-- ROW 1 -->
+                                      <tr>
+                                        <th class="fw-medium text-start" scope="row">
+                                            <img class="me-2" src="./img/class-avatar.jpg" alt="Avatar">Classe 75
+                                        </th>
+                                        <td class="d-none d-sm-table-cell">15 Feb 2021</td>
+                                        <td class="d-none d-sm-table-cell">20%</td>
+                                        <td><span class="badge bg-success">Done</span></td>
+                                        <td class="text-nowrap">
+                                            <button class="btn btn-outline-secondary border-2"><i class="fa-solid fa-pencil"></i></button>
+                                            <button class="btn btn-outline-secondary border-2"><i class="fa-solid fa-trash"></i></button>
+                                        </td>
+                                      </tr>
+                                        <!-- ROW 2 -->
+                                      <tr>
+                                        <th class="fw-medium text-start" scope="row">
+                                            <img class="me-2" src="./img/class-avatar.jpg" alt="Avatar">Classe 76
+                                        </th>
+                                        <td class="d-none d-sm-table-cell">16 Feb 2021</td>
+                                        <td class="d-none d-sm-table-cell">20%</td>
+                                        <td><span class="badge bg-success">Done</span></td>
+                                        <td class="text-nowrap">
+                                            <button class="btn btn-outline-secondary border-2"><i class="fa-solid fa-pencil"></i></button>
+                                            <button class="btn btn-outline-secondary border-2"><i class="fa-solid fa-trash"></i></button>
+                                        </td>
+                                      </tr>
+                                        <!-- ROW 3 -->
+                                      <tr>
+                                        <th class="fw-medium text-start" scope="row">
+                                            <img class="me-2" src="./img/class-avatar.jpg" alt="Avatar">Classe 77
+                                        </th>
+                                        <td class="d-none d-sm-table-cell">17 Feb 2021</td>
+                                        <td class="d-none d-sm-table-cell">20%</td>
+                                        <td><span class="badge bg-warning">Process</span></td>
+                                        <td class="text-nowrap">
+                                            <button class="btn btn-outline-secondary border-2"><i class="fa-solid fa-pencil"></i></button>
+                                            <button class="btn btn-outline-secondary border-2"><i class="fa-solid fa-trash"></i></button>
+                                        </td>
+                                      </tr>
+                                        <!-- ROW 4 -->
+                                      <tr>
+                                        <th class="fw-medium text-start" scope="row">
+                                            <img class="me-2" src="./img/class-avatar.jpg" alt="Avatar">Classe 78
+                                        </th>
+                                        <td class="d-none d-sm-table-cell">18 Feb 2021</td>
+                                        <td class="d-none d-sm-table-cell">20%</td>
+                                        <td><span class="badge bg-success">Done</span></td>
+                                        <td class="text-nowrap">
+                                            <button class="btn btn-outline-secondary border-2"><i class="fa-solid fa-pencil"></i></button>
+                                            <button class="btn btn-outline-secondary border-2"><i class="fa-solid fa-trash"></i></button>
+                                        </td>
+                                      </tr>
+                                        <!-- ROW 5 -->
+                                      <tr>
+                                        <th class="fw-medium text-start" scope="row">
+                                            <img class="me-2" src="./img/class-avatar.jpg" alt="Avatar">Classe 79
+                                        </th>
+                                        <td class="d-none d-sm-table-cell">19 Feb 2021</td>
+                                        <td class="d-none d-sm-table-cell">20%</td>
+                                        <td><span class="badge bg-warning">Failed</span></td>
+                                        <td class="text-nowrap">
+                                            <button class="btn btn-outline-secondary border-2"><i class="fa-solid fa-pencil"></i></button>
+                                            <button class="btn btn-outline-secondary border-2"><i class="fa-solid fa-trash"></i></button>
+                                        </td>
+                                      </tr>
+                                        <!-- ROW 6 -->
+                                      <tr>
+                                        <th class="fw-medium text-start" scope="row">
+                                            <img class="me-2" src="./img/class-avatar.jpg" alt="Avatar">Classe 80
+                                        </th>
+                                        <td class="d-none d-sm-table-cell">20 Feb 2021</td>
+                                        <td class="d-none d-sm-table-cell">20%</td>
+                                        <td><span class="badge bg-success">Done</span></td>
+                                        <td class="text-nowrap">
+                                            <button class="btn btn-outline-secondary border-2"><i class="fa-solid fa-pencil"></i></button>
+                                            <button class="btn btn-outline-secondary border-2"><i class="fa-solid fa-trash"></i></button>
+                                        </td>
+                                      </tr>
+                                        <!-- ROW 7 -->
+                                      <tr>
+                                        <th class="fw-medium text-start" scope="row">
+                                            <img class="me-2" src="./img/class-avatar.jpg" alt="Avatar">Classe 81
+                                        </th>
+                                        <td class="d-none d-sm-table-cell">21 Feb 2021</td>
+                                        <td class="d-none d-sm-table-cell">20%</td>
+                                        <td><span class="badge bg-warning">Failed</span></td>
+                                        <td class="text-nowrap">
+                                            <button class="btn btn-outline-secondary border-2"><i class="fa-solid fa-pencil"></i></button>
+                                            <button class="btn btn-outline-secondary border-2"><i class="fa-solid fa-trash"></i></button>
+                                        </td>
+                                      </tr>
+                                        <!-- ROW 8 -->
+                                      <tr>
+                                        <th class="fw-medium text-start" scope="row">
+                                            <img class="me-2" src="./img/class-avatar.jpg" alt="Avatar">Classe 82
+                                        </th>
+                                        <td class="d-none d-sm-table-cell">22 Feb 2021</td>
+                                        <td class="d-none d-sm-table-cell">20%</td>
+                                        <td><span class="badge bg-success">Done</span></td>
+                                        <td class="text-nowrap">
+                                            <button class="btn btn-outline-secondary border-2"><i class="fa-solid fa-pencil"></i></button>
+                                            <button class="btn btn-outline-secondary border-2"><i class="fa-solid fa-trash"></i></button>
+                                        </td>
+                                      </tr>
+                                    </tbody>
+                                  </table>
+                            </div>
+                        </section>                        
+                        <!-- F.A.Q. -->
+                        <section class="card mb-4">
+                            <div class="card-header h2">
+                              F.A.Q.
+                            </div>
+                            <div class="card-body">
+                                <!-- ACCORDION -->
+                                <div class="accordion accordion-flush" id="accordion-faq">
+                                    <!-- ITEM 1 -->
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header" id="flush-headingOne">
+                                        <button class="accordion-button collapsed fw-medium" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                                          Come aggiungere un nuovo studente?
+                                        </button>
+                                        </h2>
+                                        <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordion-faq">
+                                            <div class="accordion-body">Clicca sul + in alto nella sezione blu.</div>
+                                        </div>
+                                    </div>
+                                    <!-- ITEM 2 -->
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header" id="flush-headingTwo">
+                                        <button class="accordion-button collapsed fw-medium" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                                          Come posso accedere alle informazioni del mio account?
+                                        </button>
+                                        </h2>
+                                        <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordion-faq">
+                                            <div class="accordion-body">Clicca sull'icona della campanella.</div>
+                                        </div>
+                                    </div>
+                                    <!-- ITEM 3 -->
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header" id="flush-headingThree">
+                                        <button class="accordion-button collapsed fw-medium" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                                          Posso usare questa dashboard da mobile?
+                                        </button>
+                                        </h2>
+                                        <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordion-faq">
+                                            <div class="accordion-body">DEVI usarla da mobile; dopo tutte le classi che ci ho messo per farlo responsive</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>                                                
                     </div>
+
+                <!-- COL RIGHT -->
                     <div class="col-12 col-md-4">
-                        col2
+
+                        <!-- TODO -->
+                        <section class="card mb-4">
+                            <div class="card-header h2">
+                              Todo
+                            </div>
+                            <div class="card-body">
+                                <!-- CHECKBOX GROUP -->
+                                <div class="card">
+                                    <ul class="list-group list-group-flush fw-medium">
+                                        <!-- CHECK 1 -->
+                                        <li class="list-group-item">
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value="" id="check-one">
+                                                <label class="form-check-label" for="check-one">
+                                                Kickoff nuove classi
+                                                </label>
+                                            </div>
+                                        </li>
+                                        <!-- CHECK 2 -->
+                                        <li class="list-group-item">
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value="" id="check-two">
+                                                <label class="form-check-label" for="check-two">
+                                                Lezione su Bootstrap 5 in classe #92
+                                                </label>
+                                            </div>
+                                        </li>
+                                        <!-- CHECK 3 -->
+                                        <li class="list-group-item">
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value="" id="check-three">
+                                                <label class="form-check-label" for="check-three">
+                                                Controllare username github studenti
+                                                </label>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </section>
+
+                        <!-- Graph -->
+                        <section class="card mb-4">
+                            <div class="card-body">
+                                <ul class="list-group fw-medium">
+                                    <li class="list-group-item pb-3">
+                                        <img class="img-fluid mb-5" src="./img/stats.jpeg" alt="Grafico molto vago e poco attendibile">
+                                        <h3>Utenti attivi</h3>
+                                        Lista degli utenti attivi in piattaforma nell'ultimo mese
+                                    </li>
+                                    <li class="list-group-item">Gennaio: 1200</li>
+                                    <li class="list-group-item">Febbraio: 800</li>
+                                    <li class="list-group-item">Marzo: 1500</li>
+                                    <li class="list-group-item"><a class="text-primary" href="#">Visualizza report approfondito</a></li>
+                                </ul>
+                            </div>
+                        </section>                        
+
                     </div>
                 </div>
             </div>
